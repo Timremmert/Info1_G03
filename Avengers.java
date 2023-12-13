@@ -8,12 +8,12 @@
 public class Avengers {
     private String superheldenName;
     private String alterEgoName;
-    private String superheld;
+    private boolean superheld;
     private double superheldenKraft;
 
     public Avengers(){
         this.superheldenKraft = 100.0;
-        this.superheld = "normaler Mensch";
+        this.superheld = false; //"normaler Mensch"
     }
 
     /**
@@ -22,7 +22,7 @@ public class Avengers {
      */
     public void setSuperheldenName(String neuerSuperheldenName){
         this.superheldenName = neuerSuperheldenName;
-        this.superheld = "Superheld";
+        this.superheld = true; //"Superheld"
     }
 
     /**
@@ -31,7 +31,7 @@ public class Avengers {
      */
     public void setAlterEgoName(String neuerEgoName){
         this.alterEgoName = neuerEgoName;
-        this.superheld = "normaler Mensch";
+        this.superheld = false; //"normaler Mensch"
     }
 
     /**
@@ -60,14 +60,14 @@ public class Avengers {
      * Setzen des Attributs <code>superheld</code> auf den Wert "Superheld"
      */
     public void werdeSuperheld(){
-        this.superheld = "Superheld";
+        this.superheld = true; //"Superheld"
     }
 
     /**
      * Setzen des Attributs <code>superheld</code> auf den Wert "normaler Mensch"
      */
     public void werdeNormalerMensch(){
-        this.superheld = "normaler Mensch";
+        this.superheld = false; //"normaler Mensch"
     }
 
     /**
@@ -75,7 +75,7 @@ public class Avengers {
      * @return
      */
     public boolean isSuperheld(){
-        return this.superheld == "Superheld";
+        return this.superheld; //== "Superheld"
     }
 
     /**
@@ -83,7 +83,7 @@ public class Avengers {
      * @return
      */
     public String sageName(){
-        if(this.superheld == "Superheld"){
+        if(this.superheld){ // == "Superheld"
             return superheldenName;
         }
         else{
