@@ -12,7 +12,7 @@ public class Avengers {
     private double superheldenKraft = 100.0;
 
     /**
-     * Setzen des Attributs superheldenName
+     * Setzen des Attributs <code>superheldenName</code>
      * @param neuerSuperheldenName
      */
     public void setSuperheldenName(String neuerSuperheldenName){
@@ -21,7 +21,7 @@ public class Avengers {
     }
 
     /**
-     * Setzen des Attributs alterEgoName
+     * Setzen des Attributs <code>alterEgoName</code>
      * @param neuerEgoName
      */
     public void setAlterEgoName(String neuerEgoName){
@@ -30,7 +30,7 @@ public class Avengers {
     }
 
     /**
-     * Halbierung des gespeicherten Werts im Attribut superheldenKraft
+     * Halbierung des gespeicherten Werts im Attribut <code>superheldenKraft</code>
      */
     public void vollbringeHeldentat(){
         this.superheldenKraft = superheldenKraft / 2;
@@ -38,7 +38,7 @@ public class Avengers {
 
     /**
      * Lesen des Attributs <code>superheldenKraft</code>
-     * @return
+     * @return double of superheldenKraft
      */
     public double getSuperheldenKraft(){
         return this.superheldenKraft;
@@ -67,15 +67,15 @@ public class Avengers {
 
     /**
      * Überprüfung, ob Objekt ein Superheld ist
-     * @return
+     * @return boolean
      */
     public boolean isSuperheld(){
         return this.superheld;
     }
 
     /**
-     * Liefert superheldenName oder alterEgoName zurück
-     * @return
+     * Liefert Wert des Attribhuts <code>superheldenName</code> oder <code>alterEgoName</code> zurück
+     * @return String of superheldenName or alterEgoName
      */
     public String sageName(){
         if(this.superheld){
